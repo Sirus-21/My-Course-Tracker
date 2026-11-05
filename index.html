@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Course Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="#home"><span>My Course Tracker<small>A small student project</small></span></a>
+    <a class="help-link" href="#help">Help</a>
+  </header>
+
+  <main id="home">
+    <section class="welcome">
+      <p class="small-title">HELLO! WELCOME TO MY WEBSITE</p>
+      <h1>My semester<br><span>checklist</span></h1>
+      <p>I made this simple page to keep track of the topics I study.</p>
+    </section>
+
+    <section class="total-box">
+      <div><p class="small-title">MY PROGRESS</p><strong id="percent">0%</strong><p id="count">0 topics completed</p></div>
+      <div class="bar"><div id="barFill"></div></div>
+    </section>
+
+    <section class="courses">
+      <div class="section-top"><div><p class="small-title">COURSES THIS SEMESTER</p><h2>Pick a subject</h2></div>
+        <input id="search" type="search" placeholder="Find a course..." aria-label="Search courses">
+      </div>
+      <div id="courseList"></div>
+      <p id="empty" hidden>No courses found.</p>
+      <p class="note">Tip: click a course name to see its units. Your checks stay saved in this browser.</p>
+    </section>
+
+    <section class="help" id="help">
+      <p class="small-title">HELP / FAQ</p>
+      <h2>About this project</h2>
+      <p>This is a small course tracking calculator I made while learning HTML, CSS and JavaScript.</p>
+      <p><b>How do I use it?</b><br>Open a course and tick a unit when you have studied it. The percentage counts all the units together.</p>
+    </section>
+  </main>
+
+  <footer><span>Course Tracker</span><a href="#help">About · Help / FAQ</a><span>© 2026 Webnova🕸️</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
